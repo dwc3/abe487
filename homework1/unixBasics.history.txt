@@ -1,0 +1,304 @@
+    1  cd-
+    2  -l
+    3  cd
+    4  date
+    5  man ls
+    6  mkdir foo
+    7  foobar
+    8  ls foo/
+    9  ls -la foo
+   10  cd foo
+   11  touch bar
+   12  cd ..
+   13  rmdir foo
+   14  rm foo
+   15  mandwc
+   16  man dwc
+   17  man wc
+   18  ls -l
+   19  ls -lh
+   20  wc -l -lh
+   21  date; echo; hello; date
+   22  date; echo hello; date
+   23  echo $HOME
+   24  ssh-keygen
+   25  [gila@~/work/abe487] $ ftp ftp.imicrobe.us
+   26  [gila@~/work/abe487]$ ftp ftp.imicrobe.us
+   27  gila@~/work/abe487$ ftp ftp.microbe.us
+   28  [gila@~/work/abe487]$ ftp ftp.imicrobe.us
+   29  [gila@~/work/abe4870$
+   30  [gila@~/work/abe487]$ ftp ftp.imicrobe.us
+   31  ftp ftp.imicrobe.us
+   32  ssh-keygen
+   33  cd ~/.ssh
+   34  cat id_rsa.pub
+   35  ~/.ssh/config
+   36  host github.com
+   37  user git
+   38  User git
+   39  IdentityFile ~/.ssh/id_rsa
+   40  ~/.ssh/config ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAp3PuY5Fm29rHs/Y8fAmh19w4nJa2nqxaGnQQe4eljU7s8Mv8x7RhDHD1CezK0hBFW2eU5aBmGcAYTqEmPRJVICoRZQl1hdk0iqUDKMX5XBy0H1plXb7QZ/JePh7gpe6Me6alNS7+9rc9r+rccmvjsBe+LeMcHtfPKOlC9HeuXcR2Cr3/XQYI+dwIpUrybb9f783MHZuTFMWZnoS1VKHj6yTUb9FeuTACaCMjFv4p9SHhNLVs/z4JF5/QiE3C8E6GOhST+IGa+fmJc66rXVHCufRMerc3J9VWr7r0x+iW/+tOkmhRv6amVyBdyTlNySOUIBpoL96NVmW5o+1zTZ13Kw== dwc3@service2
+   41  ssh dwc3@login.hpc.arizona.edu
+   42  ls
+   43  ls -la
+   44  cd .ssh
+   45  ls
+   46  ls -la
+   47  cat id_rsa.pub
+   48  ssh-keygen
+   49  cat id_rsa.pub
+   50  ls
+   51  nano config
+   52  cd
+   53  pwd
+   54  ls
+   55  git help
+   56  git clone git@github.com:dwc3/abe487.git
+   57  ls
+   58  cd
+   59  cd abe487/
+   60  ls -la
+   61  ls
+   62  mkdir hmwk1
+   63  cd hmwk1/
+   64  ls ~
+   65  man mv
+   66  mv ~/cuffdiff.txt .
+   67  ls -la
+   68  ls /
+   69  ls/
+   70  man ls
+   71  ~
+   72  man man
+   73  head
+   74  man head
+   75  head ls
+   76  ls
+   77  head cuffdiff.txt 
+   78  git status
+   79  git add .
+   80  git status
+   81  git commit
+   82  git commit -m 'test'
+   83  git config --global user.name 'Denisse Cuarteros'
+   84  git config --global user.email dwc3@email.arizona.edu
+   85  git commit -m 'test'
+   86  git push
+   87  ftp ftp.imicrobe.us
+   88  ls
+   89  head mouse.fa 
+   90  ls -lt
+   91  man ls
+   92  date; cd ; date
+   93  grep PATTERN > PATTERN.txt
+   94  ~
+   95  pwd 
+   96  ls
+   97  ls abe487/
+   98  head hmwk1
+   99  ls ~
+  100  cd abe487/
+  101  ls
+  102  cd README.md 
+  103  man cd
+  104  ls -l
+  105  cd
+  106  cd -
+  107  pwd
+  108  ls
+  109  cd
+  110  cd -
+  111  cd hmwk1/
+  112  pwd
+  113  ls
+  114  head mouse.fa
+  115  head cuffdiff.txt 
+  116  grep Chr9 cuffdiff.txt 
+  117  grep chr9 cuffdiff.txt 
+  118  man grep
+  119  grep -i Chr9 cuffdiff.txt 
+  120  grep -i chr4 cuffdiff.txt 
+  121  man wc
+  122  wc cuffdiff.txt 
+  123  man wc
+  124  wc -l
+  125  wc -l cuffdiff.txt 
+  126  grep -i chr4 cuffdiff.txt |wc-l
+  127  grep -i chr4 cuffdiff.txt |wc -l 
+  128  man wc
+  129  grep -i
+  130  man wc
+  131  wc -m cuffdiff.txt 
+  132  grep -i chr4 cuffdiff.txt |head
+  133  man head
+  134  grep -i chr4 cuffdiff.txt |head -q
+  135  man head
+  136  grep -i chr4 cuffdiff.txt |sort
+  137  man sort
+  138  grep -i chr4 cuffdiff.txt |sort -M
+  139  ls ~
+  140  ls -la
+  141  ls -la ~
+  142  pwd
+  143  head ~/.bash_history
+  144  wc
+  145  wc ~/.bash_history 
+  146  wc -l ~/.bash_history
+  147  git status
+  148  git add
+  149  git add mouse.fa 
+  150  git status
+  151  git commit
+  152  git commit -m 'draft'
+  153  git status
+  154  man git
+  155  git push
+  156  man ls
+  157  pwd
+  158  ~
+  159  cd abe487/
+  160  ls -la
+  161  cd ..
+  162  man ls
+  163  ls -d
+  164  ls -l |cw -l
+  165  ls -l |wc -l
+  166  man wc
+  167  ls -l |wc -d
+  168  echo */ |wc
+  169  echo* |wc
+  170  echo * |wc
+  171  echo *.* |wc
+  172  man nano
+  173  >seqName description
+  174  nano config
+  175  ~
+  176  cd..
+  177  pwd
+  178  ls -la
+  179  cd..
+  180  cd ..
+  181  cd . .
+  182  ls -l |wc -l
+  183  ls -l | grep -c ^d
+  184  nano sequences.fasta
+  185  wc -l sequences.fasta
+  186  nano
+  187  nano sequences.fasta
+  188  ~
+  189  ls -la
+  190  cs ..
+  191  cd ..
+  192  ls -l |wc -l
+  193  ls -l |grep -c ^d
+  194  nano
+  195  cd abe487/
+  196  nano
+  197  wc -l |nano 
+  198  ~
+  199  ls -la
+  200  cd ..
+  201  ls
+  202  ls -la
+  203  cd ..
+  204  ls -l |wc -l
+  205  ~
+  206  ls -la
+  207  ~
+  208  cd ..
+  209  ls -l | wc -l
+  210  ls -l |grep -c ^d
+  211  nano
+  212  nano config
+  213  wc -l sequences.fasta
+  214  nano config
+  215  wc -l sequences.fasta
+  216  nano
+  217  cd
+  218  wc -l seqName 
+  219  wc -l sequences.fasta
+  220  cd abe487/
+  221  head hmwk1/
+  222  cd hmwk1/
+  223  wc -l sequences/fasta
+  224  nano
+  225  wc -l sequences.fasta
+  226  wc -c sequences.fasta
+  227  head -l sequences.fasta
+  228  head -1 sequences.fasta
+  229  tail -3 sequences.fasta 
+  230  grep -c '>' sequences.fasta 
+  231  mv sequences.fasta Micro.fasta
+  232  mkdir fasta
+  233  cp Micro.fasta ./fasta/
+  234  ls ./fasta/
+  235  rm Micro.fasta
+  236  man rm
+  237  man cp
+  238  history > unixBasics.history.txt
+  239  ftp ftp.microbe.us
+  240  ftp ftp.imicrobe.us
+  241  sort -k10,10nr cuffdiff.txt >sorted.cuffdiff.out
+  242  ftp
+  243  sort -k10,10nr cuffdiff.txt |head -100 >top100.sorted.cuffdiff.out
+  244  sort -g -r -k10 cuffdiff.txt |cut -f1 |uniq |head -100 > differentially.expressed.genes.txt
+  245  sort -g -r -k10 cuffdiff.txt | column -t
+  246  sort -g -r -k10 cuffdiff.txt | column -t | less -S
+  247  git commit -m 'homework1'
+  248  git commit -m 'homework 1'
+  249  git commit
+  250  git commit -m 'homework 1'
+  251  git commit 'draft'
+  252  git commit
+  253  git commit -m 'push'
+  254  git commit
+  255  ls
+  256  git commit
+  257  git commit -m 'did homework 1'
+  258  wc -l sequences.fasta
+  259  wc -c sequences.fasta
+  260  git puspush
+  261  ~
+  262  ls -la
+  263  cd
+  264  cd abe487/
+  265  cd hmwk1/
+  266  cd
+  267  cd abe487/
+  268  mkdir homework1
+  269  cd homework1/
+  270  ~
+  271  ls
+  272  ls-la
+  273  cd ..
+  274  ls -l |wc -l
+  275  ls -l | grep -c ^d
+  276  ~
+  277  ls -la
+  278  cd
+  279  cd abe487/
+  280  cd hmwk1/
+  281  cd
+  282  cd abe487/
+  283  cd homework1/
+  284  cd ..
+  285  ls -l |wc -l
+  286  ls -l|grep -c ^d
+  287  cd
+  288  cd abe487/
+  289  cd homework1/
+  290  nano
+  291  wc -l sequences.fasta
+  292  wc -c sequences.fasta 
+  293  head -l sequences.fasta 
+  294  head -1 sequences.fasta 
+  295  tail -3 sequences.fasta 
+  296  grep -c '>' sequences.fasta 
+  297  mv sequences.fasta Micro2.fasta
+  298  mkdir fasta
+  299  cp Micro2.fasta ./fasta/
+  300  ls ./fasta/
+  301  rm Micro2.fasta 
+  302  man rm
+  303  man cp
+  304  history > unixBasics.history.txt
