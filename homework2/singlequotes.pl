@@ -1,7 +1,9 @@
 #!/usr/bin/env perl
-$classname  ="Genesis 1:26-27";
+use strict;
+
+my $classname  ="Genesis 1:26-27";
 print 'Hello there. Have you heard about God the Mother?\n';
-$you =Charlie;
+my $you =Charlie;
 chomp($you);
 print 'Hello $you, please read $classname.\n';
 print '$you\t';
