@@ -6,7 +6,7 @@ use autodie;
 my @numbers = @ARGV;
 
 if (@numbers == 0) {
-die "Please provide a list of numbers.\n";
+die "Please provide a list of sequence.\n";
 }
 
 #my @array;
@@ -23,6 +23,5 @@ die "Please provide a list of numbers.\n";
 #push @array, $number;
 #}
 
-print "default sort = ", join (',', (@numbers)), "\n";
-print "numerical sort = ", join (',', sort {$a cmp $b} (@numbers) ), "\n";
-print "reverse numerical sort = ", join (',', sort {$b cmp $a} (@numbers) ), "\n";
+print "sorted = ", join (',', sort { $a cmp $b } (@numbers) ), "\n";
+print "reverse = ", join (',', sort { $b cmp $b } (@numbers) ), "\n";

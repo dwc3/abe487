@@ -3,9 +3,8 @@ use strict;
 use warnings;
 use feature 'say';
 
-my @array = (101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52);
-print "array = ", "\n"; 
-print join(',', @array),"\n";
+my @array = (101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52)
+print join (',', @array), "\n";
 
 my $number = pop (@array)
 print "popped = $number" "\n";
