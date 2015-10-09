@@ -3,18 +3,27 @@ use strict;
 use warnings;
 use feature 'say';
 
-my @array;
-  my $sequence =  shift ( @array);
-  my @sequence = split (//, $sequence);
-  my $total_length = 0;
-  my $GC_count = 0;
+my @array = @ARGV;
 
-foreach my $nucl (@sequence){
-  if ( ($nucl eq "C") or ( $nucl eq "G") ){
-        $GC_count++;
+if (@array == 0) {
+die "Please provide a sequence.\n";
+}
+
+for my $sequence (@array) {
+my @bases = split (//,$sequence);
+my $length = 0;
+my $GC = 0;
+
+foreach my $base (@bases) {
+    if ( (uc($base) eq "C") or (uc($base) eq "G") ){
+	$GC ++;
+
       }
-     $total_length++
-   }
-   print $total_length,"\n";
-   my $percent_GC = ($GC_count/$total_length)*100;
-   print $percent_GC,"\n";
+     $length++;
+}
+   print "-------\n";
+   print "Seq : ", $sequence, "\n";
+   print "Length : ", $length, "\n";
+   print "#GC : ", $GC, "\n";
+   print "%GC : ", $GC / $length * 100 , "\n";
+}

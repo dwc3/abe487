@@ -1,22 +1,30 @@
 #!/usr/bin/env perl
 use strict;
-use warnings
+use warnings;
+use autodie;
 
+my ($s1, $s2) = @ARGV;
 
-my $al_seq1 = "ATGTCC---GT-GGCC"; # Aligned sequence 1
-my $al_seq2 = "--CTCCATCGTT-GCC"; # Aligned sequence 2
-my $size = length($al_seq1);
-
-my @seq1 = split(//,$al_seq1);
-my @seq2 = split(//,$al_seq2);
-
-print "$al_seq1\n";
-print "$al_seq2\n";
-for(my $c = 0; $c < $size; $c++)
-{
-  if ($seq1[$c] ne $seq2[$c])
-  {
-    print "Difference at $c\n";
-  }
+if (@ARGV !=2) {
+die "Please provide two sequence. \n";
 }
 
+if (length($s1) != length($s2)){
+die "Please ensure the sequences are the same length.\n";
+}
+
+my $count = 0;
+
+for (my $i = 0; $i < length($s1); $i++) {
+my $n1 = substr($s1, $i, 1);
+my $n2 = substr($s1, $i, 1);
+
+# print "i ($i), s1 ($n1), s2 ($n2)\n";
+
+if ($s1 ne $s2) {
+print "Pos ", $i+1, ": ", $n1, " => ", $n2, "\n";
+$count++;
+}
+}
+
+printf "Found %s SNP%S.\n", $count, ($count == 1) ? ' ' : 's';
