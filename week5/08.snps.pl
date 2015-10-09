@@ -27,4 +27,4 @@ $count++;
 }
 }
 
-printf "Found %s SNP%S.\n", $count, ($count == 1) ? ' ' : 's';
+printf "Found %s SNP%s.\n", $count, ($count == 1) ? ' ' : 's';
