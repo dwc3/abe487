@@ -3,21 +3,25 @@ use strict;
 use warnings;
 use feature 'say';
 
-my @array = (101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52)
-print join (',', @array), "\n";
+my @array =
+  ( 101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52 ) print join( ',', @array ), "\n";
 
-my $number = pop (@array)
-print "popped = $number" "\n";
-print "array = ", join(',', @array),"\n";
+## Please see file perltidy.ERR
+my $number = pop(@array) print "popped = $number" "\n";
+print "array = ", join( ',', @array ), "\n";
 
 my $first = shift(@array);
 print "shifted = $first" "\n";
-print  "array = ", join(',', @array),"\n";
+print "array = ", join( ',', @array ), "\n";
 
-push(@array, '12');
+push( @array, '12' );
 print "pushed = ", "\n";
-print "array = ", join(',', @array),"\n";
+print "array = ", join( ',', @array ), "\n";
 
-unshift(@array, '4');
+unshift( @array, '4' );
 print "unshifted = ", "\n";
-print "array = ", join(',', @array),"\n";
+print "array = ", join( ',', @array ), "\n";
+
+__END__
+
+Fails to compile.
