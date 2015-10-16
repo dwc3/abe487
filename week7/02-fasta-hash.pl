@@ -7,16 +7,18 @@ use autodie;
 
 my $file = shift @ARGV || "Perl_V.genesAndSeq.txt";
 open my $fh, '<', $file;
-my %hash;
 
+my %seqs;
+my $id;
 while (my $line = <$fh>){
     chomp $line;
-    my ($key, $value) = split/\t/, $line;
-    $hash{$key} = $value;
+    if (substr($line, 0, 1) eq '>') {
+        $id = substr($line, 1);
+        $seqs{$id} = 0;
+    }else{
+        $seqs{$id} += length($line);
+    }
 }
-
-for my $key (sort keys %hash){
-    my $value = $hash{$key};
-    print "key: $key value:$value \n";
+for my $id ( sort { $seqs{$a} <=> $seqs{$b} } keys %seqs) {
+    say "$id: $seqs{$id}";
 }
-
