@@ -1,0 +1,47 @@
+Last login: Fri Oct 16 13:52:52 on ttys000
+ICMAC615:~ guest$ ssh -l dwc3 login.hpc.arizona.edu
+The authenticity of host 'login.hpc.arizona.edu (128.196.131.51)' can't be established.
+RSA key fingerprint is a5:0d:59:59:59:e8:af:c8:05:c2:c0:06:15:57:4d:09.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'login.hpc.arizona.edu,128.196.131.51' (RSA) to the list of known hosts.
+Password: 
+Password: 
+Duo two-factor login for dwc3
+
+Enter a passcode or select one of the following options:
+
+ 1. Duo Push to XXX-XXX-5804
+ 2. Phone call to XXX-XXX-5804
+ 3. SMS passcodes to XXX-XXX-5804 (next code starts with: 1)
+
+Passcode or option (1-3): 1
+Success. Logging you in...
+Last login: Tue Oct 13 06:41:39 2015 from ip68-106-246-135.ph.ph.cox.net
+[dwc3@service1 ~]$ cd abe487/
+[dwc3@service1 abe487]$ mkdir week7
+[dwc3@service1 abe487]$ cd week7/
+[dwc3@service1 week7]$ vi 01-cities.pl
+
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie;
+use feature 'say';
+use Data::Dumper;
+
+my %homes = (
+    'Tucson'      => 'AZ',
+    'Riverside' => 'CA',
+    'West Lafayette' => 'IN',
+);
+
+say Dumper(\%homes);
+
+foreach my $city (sort keys %homes) {
+    my $aa = $homes{$city};
+    print "$city, $aa \n";
+}
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                  
