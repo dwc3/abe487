@@ -12,11 +12,11 @@ my %seqs;
 my $id;
 while (my $line = <$fh>){
     chomp $line;
-    if (substr($line, 0, 1) eq '>') {
+    if (substr ($line, 0, 1) eq '>') {
         $id = substr($line, 1);
-        $seqs{$id} = 0;
-    }else{
-        $seqs{$id} += length($line);
+        $seqs {$id} = 0;
+    }else {
+        $seqs {$id} += length($line);
     }
 }
 for my $id ( sort { $seqs{$a} <=> $seqs{$b} } keys %seqs) {

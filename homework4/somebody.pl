@@ -1,6 +1,10 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+use feature 'say';
+use autodie; 
+
+my $file = shift || 'Perl_III.nobody.txt';
 
 while (my $line = <>) {
 chomp($line);
