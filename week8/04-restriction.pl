@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-my $file = shift || die "Please provide a sequence.\n";
+my $file = shift || die "Please provide a sequence or file.\n";
 my $seq = "";
 my $sc = 0;
 open(my $IN, '<', $file);
