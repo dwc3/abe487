@@ -17,6 +17,5 @@ while (my $line = <$IN>)
   }
 }
 close($IN);
-print $seq, "\n";
-print $seq =~ s/(([AG])(AATT[CT]))/$1^$2/g;
-print "\n";
+$seq =~ s/([AG])(AATT[CT])/$1^$2/g;
+print $seq, "\n"

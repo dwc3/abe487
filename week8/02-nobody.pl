@@ -3,15 +3,11 @@ use strict;
 use warnings;
 use autodie;
 
-my $word = "Nobody";
-
-$word =~ s/(\w+) (\w+) Nobody/$2 $1 George/;
+my $name = shift || 'George';
 
 while (my $line = <DATA>) {
-   chomp $line;
-} else {
-   print " 
-
+   $line =~ s/Nobody/$name/g;
+   print $line;
 }
 
 __DATA__
