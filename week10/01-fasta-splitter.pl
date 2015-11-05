@@ -33,13 +33,13 @@ sub main {
     
     for my $file (@ARGV) {
         say "file ($file)";
-        my $in = Bio::SeqIO->new(-file => $file,
+        my $seqio = Bio::SeqIO->new(-file => $file,
                                  -format => "fasta");
         
         my $count = 0; 
         my $filenum = 1;
         my $out = new Bio::SeqIO(-file=> ">$file.$filenum", -format=>'fasta');
-        while (my $seq = $in->next_seq()) {
+        while (my $seq = $seqio->next_seq()) {
             $count++;
             if ($count > $max) {
                 $count = 1;

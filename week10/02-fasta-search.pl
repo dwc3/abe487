@@ -35,7 +35,7 @@ sub main {
 
    if ($count > 0) {
         (my $filename = $pattern) =~ s/\W//g;
-        $filename .= '.fa';
+        $filename = '.fa';
         my $writer = Bio::SeqIO->new(-file => ">$filename",
                                      -format => 'Fasta');
         for my $id (@ids) {
@@ -54,6 +54,7 @@ sub get_opts {
         'help',
         'man',
         'number:1',
+        'ou_dir:s',
     ) or pod2usage(2);
 
     return %opts;
